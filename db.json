@@ -1,0 +1,853 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "first_name": "Bill",
+      "last_name": "Smith",
+      "email": "bill.smith@gmail.com",
+      "password": "123",
+      "role": [
+        "admin"
+      ],
+      "campus": [],
+      "department": "NULL"
+    },
+    {
+      "id": "2",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "password": "123",
+      "role": [
+        "instructor"
+      ],
+      "campus": [
+        "Beirut"
+      ],
+      "department": "Computer Science"
+    },
+    {
+      "id": "3",
+      "first_name": "Adam",
+      "last_name": "Johnson",
+      "email": "adam.johnson@example.com",
+      "password": "123",
+      "role": [
+        "coordinator"
+      ],
+      "campus": [
+        "Byblos"
+      ],
+      "department": "Liberal Arts and Sciences"
+    },
+    {
+      "id": "8fd7",
+      "first_name": "Mark",
+      "last_name": "Musk",
+      "campus": [
+        "Byblos"
+      ],
+      "department": "Liberal Arts and Sciences",
+      "email": "mark.musk@gmail.com",
+      "role": [
+        "instructor"
+      ]
+    },
+    {
+      "id": "5a4b",
+      "first_name": "A",
+      "last_name": "B",
+      "campus": [
+        "Beirut",
+        "Byblos"
+      ],
+      "department": "Computer Science",
+      "email": "a.b@gmail.com",
+      "password": "123",
+      "role": [
+        "admin",
+        "coordinator",
+        "instructor"
+      ]
+    },
+    {
+      "id": "6a3b",
+      "first_name": "C",
+      "last_name": "D",
+      "campus": [
+        "Beirut"
+      ],
+      "department": "Liberal Arts and Sciences",
+      "email": "c.d@gmail.com",
+      "role": [
+        "coordinator"
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "semester": "Fall 2025",
+      "text": "Instructor X submitted the form.",
+      "date": "2025-12-01T09:00:00Z",
+      "recepient_role": "admin"
+    },
+    {
+      "id": "2",
+      "semester": "Spring 2026",
+      "text": "Instructor Z submitted the form.",
+      "date": "2025-12-01T09:00:00Z",
+      "recepient_role": "admin"
+    },
+    {
+      "id": "3",
+      "semester": "Fall 2025",
+      "text": "Instructor Y submitted the form.",
+      "date": "2025-12-01T03:00:00Z",
+      "recepient_role": "admin"
+    },
+    {
+      "id": "4",
+      "semester": "Fall 2025",
+      "text": "Instructor A submitted the form.",
+      "date": "2026-01-05T10:15:30Z",
+      "recepient_role": "admin"
+    }
+  ],
+  "reminder_overview": [
+    {
+      "id": "1",
+      "semester": "Fall 2024",
+      "month": "Sep",
+      "reminders_sent": 5
+    },
+    {
+      "id": "2",
+      "semester": "Fall 2024",
+      "month": "Oct",
+      "reminders_sent": 12
+    },
+    {
+      "id": "3",
+      "semester": "Fall 2024",
+      "month": "Nov",
+      "reminders_sent": 8
+    }
+  ],
+  "reminders": [
+    {
+      "id": "1",
+      "semester": "Fall 2025",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2025-12-05T09:00:00Z",
+      "recipients": 12
+    },
+    {
+      "id": "2",
+      "semester": "Spring 2026",
+      "text": "First day reminder was sent to instructors with pending forms.",
+      "date": "2025-12-01T09:00:00Z",
+      "recipients": 8
+    },
+    {
+      "id": "3",
+      "semester": "Fall 2025",
+      "text": "Middle of semester reminder was sent to instructors with pending forms.",
+      "date": "2025-12-01T09:00:00Z",
+      "recipients": 5
+    },
+    {
+      "id": "1628",
+      "semester": "Fall 2025",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2026-01-07T11:22:31.561Z",
+      "recipients": 20
+    },
+    {
+      "id": "aa44",
+      "semester": "Fall 2025",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2026-01-07T11:23:22.093Z",
+      "recipients": 20
+    },
+    {
+      "id": "eb68",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2026-01-07T12:41:35.313Z",
+      "recipients": 0
+    },
+    {
+      "id": "713b",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2026-01-07T12:51:40.171Z"
+    },
+    {
+      "id": "ae49",
+      "text": "A quick reminder was sent to instructors with pending forms.",
+      "date": "2026-01-07T13:07:24.608Z",
+      "recipients": 20
+    }
+  ],
+  "pending-forms": {
+    "id": 1,
+    "semester": "Fall 2025",
+    "count": 20
+  },
+  "total-reminders": {
+    "id": 1,
+    "total_sent": 30
+  },
+  "total-forms": {
+    "id": 1,
+    "total_forms": 20
+  },
+  "campuses": [
+    {
+      "id": "1",
+      "name": "Beirut"
+    },
+    {
+      "id": "2",
+      "name": "Byblos"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Liberal Arts and Sciences"
+    }
+  ],
+  "settings": {
+    "id": 1,
+    "current_semester": "Fall 2025",
+    "academic_year": "2025-2026",
+    "year_number": 1,
+    "semester_start_date": "2026-03-01",
+    "semester_end_date": "2026-04-11"
+  },
+  "pcs": [
+    {
+      "id": "1",
+      "so_id": 1,
+      "pc_code": "1.1"
+    },
+    {
+      "id": "2",
+      "so_id": 1,
+      "pc_code": "1.2"
+    },
+    {
+      "id": "3",
+      "so_id": 1,
+      "pc_code": "1.3"
+    },
+    {
+      "id": "4",
+      "so_id": 1,
+      "pc_code": "1.4"
+    },
+    {
+      "id": "5",
+      "so_id": 1,
+      "pc_code": "1.5"
+    },
+    {
+      "id": "6",
+      "so_id": 1,
+      "pc_code": "1.6"
+    },
+    {
+      "id": "7",
+      "so_id": 1,
+      "pc_code": "1.7"
+    },
+    {
+      "id": "8",
+      "so_id": 2,
+      "pc_code": "2.1"
+    },
+    {
+      "id": "9",
+      "so_id": 2,
+      "pc_code": "2.2"
+    },
+    {
+      "id": "10",
+      "so_id": 2,
+      "pc_code": "2.3"
+    },
+    {
+      "id": "11",
+      "so_id": 2,
+      "pc_code": "2.4"
+    },
+    {
+      "id": "12",
+      "so_id": 3,
+      "pc_code": "3.1"
+    },
+    {
+      "id": "13",
+      "so_id": 3,
+      "pc_code": "3.2"
+    },
+    {
+      "id": "14",
+      "so_id": 3,
+      "pc_code": "3.3"
+    },
+    {
+      "id": "15",
+      "so_id": 3,
+      "pc_code": "3.4"
+    },
+    {
+      "id": "16",
+      "so_id": 4,
+      "pc_code": "4.1"
+    },
+    {
+      "id": "17",
+      "so_id": 4,
+      "pc_code": "4.2"
+    },
+    {
+      "id": "18",
+      "so_id": 4,
+      "pc_code": "4.3"
+    },
+    {
+      "id": "19",
+      "so_id": 4,
+      "pc_code": "4.4"
+    },
+    {
+      "id": "20",
+      "so_id": 5,
+      "pc_code": "5.1"
+    },
+    {
+      "id": "21",
+      "so_id": 5,
+      "pc_code": "5.2"
+    },
+    {
+      "id": "22",
+      "so_id": 5,
+      "pc_code": "5.3"
+    },
+    {
+      "id": "23",
+      "so_id": 6,
+      "pc_code": "6.1"
+    },
+    {
+      "id": "24",
+      "so_id": 6,
+      "pc_code": "6.2"
+    },
+    {
+      "id": "25",
+      "so_id": 6,
+      "pc_code": "6.3"
+    }
+  ],
+  "forms": [
+    {
+      "id": "1",
+      "form_name": "Course Assessment Form - CSC 310",
+      "semester": "Fall 2025",
+      "course_code": "CSC 310",
+      "status": "Submitted",
+      "instructor_name": "John Doe",
+      "document": "CSC310_Fall2025_JohnDoe.pdf"
+    },
+    {
+      "id": "2",
+      "form_name": "Course Assessment Form - CSC 222",
+      "semester": "Fall 2025",
+      "course_code": "CSC 222",
+      "status": "Submitted",
+      "instructor_name": "John Doe",
+      "document": "CSC222_Fall2025_JohnDoe.pdf"
+    },
+    {
+      "id": "3",
+      "form_name": "Course Assessment Form - CSC 123",
+      "semester": "Fall 2024",
+      "course_code": "CSC 123",
+      "status": "In Progress",
+      "instructor_name": "Jane Smith",
+      "document": "CSC123_Fall2024_JaneSmith.pdf"
+    },
+    {
+      "id": "4",
+      "form_name": "Course Assessment Form - CSC 111",
+      "semester": "Fall 2025",
+      "course_code": "CSC 111",
+      "status": "Not Opened",
+      "instructor_name": "Alice Johnson",
+      "document": "CSC111_Fall2025_AliceJohnson.pdf"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "cbcc",
+      "course_id": 4,
+      "so_id": 1,
+      "instructor_id": "5a4b",
+      "pc_ids": [
+        3
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Beirut",
+      "created_at": "2026-03-24T18:15:30.666Z"
+    },
+    {
+      "id": "2357",
+      "course_id": 4,
+      "so_id": 1,
+      "instructor_id": "2",
+      "pc_ids": [
+        3,
+        1
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Beirut",
+      "created_at": "2026-03-24T18:15:55.076Z"
+    },
+    {
+      "id": "22a8",
+      "course_id": 4,
+      "so_id": 1,
+      "instructor_id": "8fd7",
+      "pc_ids": [
+        3,
+        1
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Byblos",
+      "created_at": "2026-03-24T18:15:55.076Z"
+    },
+    {
+      "id": "1c17",
+      "course_id": 8,
+      "so_id": 1,
+      "instructor_id": "2",
+      "pc_ids": [
+        2
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Beirut",
+      "created_at": "2026-03-24T18:16:19.108Z"
+    },
+    {
+      "id": "1756",
+      "course_id": 8,
+      "so_id": 1,
+      "instructor_id": "5a4b",
+      "pc_ids": [
+        2
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Byblos",
+      "created_at": "2026-03-24T18:16:19.109Z"
+    },
+    {
+      "id": "8ea4",
+      "course_id": 4,
+      "so_id": 1,
+      "instructor_id": "2",
+      "pc_ids": [
+        1,
+        2,
+        3
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Beirut",
+      "created_at": "2026-03-24T21:23:43.660Z"
+    },
+    {
+      "id": "fe40",
+      "course_id": 4,
+      "so_id": 1,
+      "instructor_id": "5a4b",
+      "pc_ids": [
+        1,
+        2,
+        3
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Byblos",
+      "created_at": "2026-03-24T21:23:43.663Z"
+    },
+    {
+      "id": "ed37",
+      "course_id": 11,
+      "so_id": 2,
+      "instructor_id": "5a4b",
+      "pc_ids": [
+        8,
+        9
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Beirut",
+      "created_at": "2026-03-24T21:24:06.259Z"
+    },
+    {
+      "id": "18c4",
+      "course_id": 11,
+      "so_id": 2,
+      "instructor_id": "5a4b",
+      "pc_ids": [
+        8,
+        9
+      ],
+      "year": 1,
+      "academic_year": "2025-2026",
+      "semester": "Fall 2025",
+      "campus": "Byblos",
+      "created_at": "2026-03-24T21:24:06.259Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "2",
+      "course_code": "CSC 380",
+      "course_title": "Theory of Computations",
+      "department": "Computer Science",
+      "so_ids": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "3",
+      "course_code": "MTH 207",
+      "course_title": "Discrete Structures",
+      "department": "Mathematics",
+      "so_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "4",
+      "course_code": "CSC 447",
+      "course_title": "Parallel Programming",
+      "department": "Computer Science",
+      "so_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": "5",
+      "course_code": "CSC 322",
+      "course_title": "Computer Organization Lab",
+      "department": "Computer Science",
+      "so_ids": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "6",
+      "course_code": "CSC 430",
+      "course_title": "Computer Networks",
+      "department": "Computer Science",
+      "so_ids": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "7",
+      "course_code": "CSC 375",
+      "course_title": "Database Systems",
+      "department": "Computer Science",
+      "so_ids": [
+        1,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "8",
+      "course_code": "CSC 490",
+      "course_title": "Software Engineering",
+      "department": "Computer Science",
+      "so_ids": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "9",
+      "course_code": "LAS 204",
+      "course_title": "Technology, Ethics, and the Global Society",
+      "department": "Liberal Arts",
+      "so_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "10",
+      "course_code": "LAS 205",
+      "course_title": "Digital Cultures",
+      "department": "Liberal Arts",
+      "so_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "11",
+      "course_code": "CSC 599",
+      "course_title": "Capstone Project",
+      "department": "Computer Science",
+      "so_ids": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "12",
+      "course_code": "CSC 598",
+      "course_title": "Undergraduate Research",
+      "department": "Computer Science",
+      "so_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "1ba4",
+      "course_code": "test",
+      "course_title": "test",
+      "so_ids": [
+        "3"
+      ]
+    }
+  ],
+  "sos": [
+    {
+      "id": "1",
+      "so_code": "SO1",
+      "definition": "Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions."
+    },
+    {
+      "id": "2",
+      "so_code": "SO2",
+      "definition": "Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline."
+    },
+    {
+      "id": "3",
+      "so_code": "SO3",
+      "definition": "Communicate effectively in a variety of professional contexts."
+    },
+    {
+      "id": "4",
+      "so_code": "SO4",
+      "definition": "Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles."
+    },
+    {
+      "id": "5",
+      "so_code": "SO5",
+      "definition": "Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline."
+    },
+    {
+      "id": "6",
+      "so_code": "SO6",
+      "definition": "Apply computer science theory and software development fundamentals to produce computing-based solutions."
+    },
+    {
+      "id": "7",
+      "so_code": "SO7",
+      "definition": "Analyze the local and global impact of computing on individuals, organizations, and society."
+    }
+  ],
+  "coordinator-dashboard-stats": [
+    {
+      "id": "1",
+      "semester": "Fall 2025",
+      "form_submissions": 24,
+      "my_instructors": 4,
+      "number_of_improvements": 10,
+      "no_improvements": 10
+    },
+    {
+      "id": "2",
+      "semester": "Spring 2026",
+      "form_submissions": 18,
+      "my_instructors": 3,
+      "number_of_improvements": 7,
+      "no_improvements": 11
+    }
+  ],
+  "coordinator-improvements": [
+    {
+      "id": "1",
+      "semester": "Fall 2025",
+      "course_code": "CS101",
+      "course_name": "Intro to CS",
+      "instructor_name": "John Doe",
+      "submitted_at": "2025-11-21",
+      "improvement_text": "Add more worked examples for loops and arrays.\nUse one lab section each week for problem-solving drills."
+    },
+    {
+      "id": "2",
+      "semester": "Fall 2025",
+      "course_code": "CS201",
+      "course_name": "Data Structures",
+      "instructor_name": "Instructor X",
+      "submitted_at": "2025-11-18",
+      "improvement_text": ""
+    },
+    {
+      "id": "3",
+      "semester": "Spring 2026",
+      "course_code": "CS220",
+      "course_name": "Database Systems",
+      "instructor_name": "Bill Smith",
+      "submitted_at": "2026-02-14",
+      "improvement_text": "Increase SQL lab exercises and add indexing practice.\nStudents should receive schema design feedback before the project deadline."
+    },
+    {
+      "id": "4",
+      "semester": "Spring 2026",
+      "course_code": "CS310",
+      "course_name": "Operating Systems",
+      "instructor_name": "Lina Haddad",
+      "submitted_at": "2026-02-17",
+      "improvement_text": "Use a mini-project for process scheduling concepts."
+    }
+  ],
+  "coordinator-comparison": [
+    {
+      "id": "1",
+      "semester": "Fall 2025",
+      "course_code": "CS101",
+      "course_name": "Intro to CS",
+      "instructor_name": "John Doe",
+      "so_scores": [
+        {
+          "so_code": "SO1",
+          "percentage": 82
+        },
+        {
+          "so_code": "SO2",
+          "percentage": 76
+        },
+        {
+          "so_code": "SO3",
+          "percentage": 68
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "semester": "Fall 2025",
+      "course_code": "CS101",
+      "course_name": "Intro to CS",
+      "instructor_name": "Instructor X",
+      "so_scores": [
+        {
+          "so_code": "SO1",
+          "percentage": 74
+        },
+        {
+          "so_code": "SO2",
+          "percentage": 71
+        },
+        {
+          "so_code": "SO3",
+          "percentage": 64
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "semester": "Spring 2026",
+      "course_code": "CS220",
+      "course_name": "Database Systems",
+      "instructor_name": "Bill Smith",
+      "so_scores": [
+        {
+          "so_code": "SO1",
+          "percentage": 66
+        },
+        {
+          "so_code": "SO2",
+          "percentage": 73
+        },
+        {
+          "so_code": "SO3",
+          "percentage": 69
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "name": "Course Assessment Report - (2020-2022)",
+      "created_at": "2021-12-20T21:25:00"
+    },
+    {
+      "id": 2,
+      "name": "Course Assessment Report - (2024-2026)",
+      "created_at": "2024-12-20T21:25:00"
+    },
+    {
+      "id": 1774392098634,
+      "name": "Course Assessment Report - (2020-2022)",
+      "created_at": "2026-03-24T22:41:38.634Z"
+    }
+  ],
+  "auto-reminders": {
+    "id": 1,
+    "first": true,
+    "middle": false,
+    "end": true,
+    "first_date": "2026-01-24",
+    "end_date": "2026-01-31"
+  },
+  "custom-reminders": {
+    "id": 1,
+    "first_date": "2026-01-29",
+    "end_date": "2026-01-30",
+    "emails_per_day": 10
+  },
+  "instructors-form-completion-stats": {
+    "submitted": 15,
+    "in_progress": 5,
+    "not_opened": 10
+  }
+}

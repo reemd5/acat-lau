@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss/preflight";
+@tailwind utilities;
+@import "tailwindcss";
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.soft-hover{
+    transition: background-color 0.3s ease;
+}
+.soft-hover:hover {
+    background-color: #f3f4f6;
+}
+
+/* Ensure all table header text is bold, including nested MUI label elements */
+th,
+th *,
+.MuiTableCell-head,
+.MuiTableCell-head * {
+  font-weight: 700 !important;
+}
+
+.MuiTypography-root {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+:root {
+    --primary-color: #0c796e; /* dark green: text,button bg */
+    --secondary-color: #5ebab1; /* light green: graphs, buttons */
+    --primary-color-hover: hsl(174, 82%, 16%); /* darker dark green for hover */
+    --light-color-hover: hsl(174, 40%, 45%); /* darker light blue for hover */
+    --shadow-color: #ffb800;
+    --icon-bg: hsla(174, 40%, 55%, 0.174);
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+
+.btn1 {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 9999px; /* rounded-full */
+  font-size: 14px;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.3s ease;
+}
+.btn1:hover {
+  background-color: #d1d5db;
+}
+
+/* Card1: first row of cards in dashboard */
+.card1 {
+    width: 24%;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.card1 * {
+    position: relative;
+    z-index: 2;
+}
+.card1::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        transparent 30%,
+        lightgray
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.card1:hover {
+    transform: scale(1.05);
+}
+.card1:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+.shadow{
+    text-shadow: var(--shadow-color) 2px 2px 15px;
+    box-shadow: none;
+}
+
+/* action cards (settings, portal, account, outlook) */
+.action-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 56px;
+  padding: 0.65rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #374151; /* gray-700 */
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.action-btn i {
+  font-size: 1.05rem;
+}
+
+.action-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Hover fill animation */
+.action-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #e5e7eb; /* gray-300 */
+  transition: width 0.3s ease-out;
+}
+/* Card2 */
+.card2 {
+    width: 24%;;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card2:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Group hover behavior */
+.action-card:hover .action-hover {
+  width: 100%;
+}
+
+/* -------------------------------------------------- */
+
+/* Card3 in Forms.jsx */
+.card3 {
+    background-color: white;
+    width: 24%;
+    height: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card3:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PRINT */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-area,
+  #print-area * {
+    visibility: visible;
+  }
+
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+
+/* RESPONSIVENESS                 */
+
+
+/* -------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .card1{
+        width: 100%;
+        height: auto;
+    }
+    .card2 {
+        width: 100%;
+        height: auto;
+    }
+    .card3{
+        width: 100%;
+        height: auto;
+    }
+    .icon,
+    .icon2 {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card1{
+        width: 100%;
+        height: auto;
+    }
+    .card2 {
+        width: 100%;
+        height: auto;
+    }
+    .card3 {
+        width: 100%;
+        height: auto;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .icon2 {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+    .card1{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .card2 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .card3 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+    .icon2 {
+        width: 22px;
+        height: 22px;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card1{
+        padding: 12px;
+    }
+    .card2 {
+        padding: 12px;
+    }
+    .card3 {
+        padding: 12px;
+    }
+}
+
+
